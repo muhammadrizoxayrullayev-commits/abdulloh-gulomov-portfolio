@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Abdulloh G'ulomov — Portfolio | 16 Yoshli Creative Developer & UI/UX Designer</title>
+  <meta name="description" content="Abdulloh G'ulomov — 16 yoshli iqtidorli Web3, Frontend dasturchi va UI/UX dizaynerning rasmiy portfoliosi. 24/7 ish rejimi va zamonaviy raqamli yechimlar." />
+  <meta name="keywords" content="abdulloh gulomov, abdulloh g'ulomov portfolio, frontend developer, ui/ux designer, web3, 16 yosh dasturchi, uzbekistan developer, portfolio" />
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Abdulloh G'ulomov — Creative Developer & UI/UX Designer (16 yosh)" />
+  <meta property="og:description" content="Abdulloh G'ulomov (16 yoshda) — Web3, FinTech, 3D interfeyslar va zamonaviy veb portfoliosi." />
+  <meta property="og:image" content="/assets/author-avatar.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="dark-theme">
+  <!-- Custom Neon Glow Cursor (Desktop) -->
+  <div class="custom-cursor-dot" id="cursorDot"></div>
+  <div class="custom-cursor-ring" id="cursorRing"></div>
+
+  <!-- Noise Overlay for Cyberpunk Texture -->
+  <div class="cyber-noise" aria-hidden="true"></div>
+
+  <!-- Ambient Light Orbs -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <header class="site-header" id="header">
+    <div class="header-inner container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Abdulloh G'ulomov Portfolio">
+        <div class="logo-avatar-wrap">
+          <img src="/assets/author-avatar.jpg" alt="Abdulloh G'ulomov" class="logo-avatar-img" />
+        </div>
+        <span class="logo-text">ABDULLOH<span class="lime-dot">.</span></span>
+        <span class="badge-tag">16 YOSH // DEV</span>
+      </a>
+
+      <!-- 24/7 Live Status Pill -->
+      <div class="live-status-pill" title="Tizim 24/7 faol va yangi buyurtmalarni qabul qiladi">
+        <span class="pulse-radar"></span>
+        <span class="status-dot"></span>
+        <span class="status-text" data-i18n="nav.status">24/7 ISH REJIMIDA</span>
+        <span class="status-clock" id="liveClock">20:38:00</span>
+      </div>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Loyihalar</a></li>
+          <li><a href="#achievements" class="nav-link" data-i18n="nav.achievements">Yutuqlarimiz</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="nav.services">Xizmatlar</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">Biz Haqimizda</a></li>
+          <li><a href="#reviews" class="nav-link" data-i18n="nav.reviews">Fikrlar</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Bog'lanish</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities: Sound, Language & CTA -->
+      <div class="header-actions">
+        <!-- Audio FX Toggle -->
+        <button class="icon-btn audio-btn" id="audioToggle" aria-label="Ovoz effektlarini yoqish/o'chirish" title="Ovoz effektlari">
+          <span class="audio-icon" id="audioIcon">🔊</span>
+          <span class="audio-tooltip">FX ON</span>
+        </button>
+
+        <!-- Language Switcher Button -->
+        <button class="lang-switch-btn" id="langToggle" aria-label="Tilni almashtirish">
+          <span class="lang-code active-lang" id="currentLang">UZ</span>
+          <span class="lang-sep">/</span>
+          <span class="lang-alt" id="altLang">EN</span>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-primary nav-cta">
+          <span data-i18n="nav.bookCall">Aloqa</span>
+          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Menyuni ochish" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <span class="brand-logo">
+          <div class="logo-avatar-wrap">
+            <img src="/assets/author-avatar.jpg" alt="Abdulloh G'ulomov" class="logo-avatar-img" />
+          </div>
+          <span class="logo-text">ABDULLOH<span class="lime-dot">.</span></span>
+          <span class="badge-tag">16 YOSH</span>
+        </span>
+        <button class="drawer-close-btn" id="mobileCloseBtn" aria-label="Menyuni yopish">✕</button>
+      </div>
+
+      <div class="mobile-status-block">
+        <span class="pulse-radar"></span>
+        <span class="status-dot"></span>
+        <span data-i18n="nav.status">24/7 ISH REJIMIDA</span>
+        <span class="mobile-clock" id="mobileClock">20:38:00</span>
+      </div>
+
+      <nav class="mobile-nav-links">
+        <a href="#projects" class="mobile-nav-item" data-i18n="nav.projects">Loyihalar</a>
+        <a href="#achievements" class="mobile-nav-item" data-i18n="nav.achievements">Yutuqlarimiz</a>
+        <a href="#services" class="mobile-nav-item" data-i18n="nav.services">Xizmatlar</a>
+        <a href="#about" class="mobile-nav-item" data-i18n="nav.about">Biz Haqimizda</a>
+        <a href="#reviews" class="mobile-nav-item" data-i18n="nav.reviews">Mijozlar fikri</a>
+        <a href="#contact" class="mobile-nav-item" data-i18n="nav.contact">Bog'lanish</a>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-primary full-width" data-i18n="nav.bookCall">Biz bilan ishlash</a>
+        <div class="mobile-socials">
+          <a href="https://t.me/krytostudio" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://behance.net" target="_blank" rel="noopener">Behance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ================= HERO SECTION (Directly inspired by Pinterest Pin) ================= -->
+    <section class="hero-section" id="hero">
+      <!-- Interactive WebGL / Particle Canvas -->
+      <canvas id="heroCanvas" class="hero-particles-canvas"></canvas>
+
+      <div class="container hero-container">
+        <!-- Floating Cyber Tagline -->
+        <div class="hero-badge-wrap">
+          <span class="cyber-chip">
+            <span class="chip-glow"></span>
+            <span class="chip-icon">◈</span>
+            <span data-i18n="hero.subtitle">ABDULLOH G'ULOMOV &bull; 16 YOSHLI CREATIVE DEVELOPER &amp; DESIGNER</span>
+          </span>
+          <span class="cyber-chip chip-outline">
+            <span>16 YOSH // 2026 EDITION</span>
+          </span>
+        </div>
+
+        <!-- The Creative Transform Frame Container (PINTEREST INSPIRED DESIGN) -->
+        <div class="transform-frame-wrapper" id="transformFrame">
+          <!-- Floating Coordinates & Transform Handles -->
+          <div class="frame-tag frame-tag-top-left">
+            <span class="tag-coord">ABDULLOH // DEV // 16 Y.O.</span>
+          </div>
+          <div class="frame-tag frame-tag-top-right">
+            <span class="tag-dim">1920 × 1080 PX</span>
+          </div>
+
+          <!-- Selection Border with Corner Handles -->
+          <div class="transform-border">
+            <span class="handle handle-tl"></span>
+            <span class="handle handle-tm"></span>
+            <span class="handle handle-tr"></span>
+            <span class="handle handle-mr"></span>
+            <span class="handle handle-br"></span>
+            <span class="handle handle-bm"></span>
+            <span class="handle handle-bl"></span>
+            <span class="handle handle-ml"></span>
+
+            <!-- Transform Crosshair / Pointer Handle -->
+            <div class="transform-crosshair">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4 4l7.07 17 2.51-7.39L21 11.07 4 4z" fill="#ccff00" stroke="#000" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Central Hero Card / Island Monolith -->
+          <div class="hero-art-card">
+            <!-- Background Monolith Image with glowing portal -->
+            <img 
+              src="/assets/hero-monolith.jpg" 
+              alt="Abdulloh G'ulomov Futuristic Monolith" 
+              class="hero-art-img" 
+              id="heroArtImg"
+              loading="eager"
+            />
+            <div class="hero-art-overlay"></div>
+
+            <!-- Colossal Typography: "Graphic Design" + "Portfolio" + Signature -->
+            <div class="hero-text-overlay">
+              <div class="hero-sublabel">
+                <span class="dot-indicator"></span>
+                <span data-i18n="hero.category">GRAPHIC DESIGN &bull; NEXT-GEN WEB</span>
+              </div>
+              
+              <h1 class="hero-display-title">
+                <span class="title-white">Port</span><span class="title-lime">folio</span>
+              </h1>
+
+              <!-- Handwritten Elegant Signature with Underline -->
+              <div class="hero-signature-wrap">
+                <span class="hero-signature">Abdulloh G'ulomov</span>
+                <svg class="signature-line" viewBox="0 0 260 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 18C45 8 115 5 180 15C215 21 245 12 255 10" stroke="#ccff00" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= INTERACTIVE AI PROMPT FLOATING BAR ================= -->
+        <!-- Directly recreated from the Pinterest inspiration bar! -->
+        <div class="prompt-bar-container" id="promptBar">
+          <div class="prompt-bar-glass">
+            <div class="prompt-input-group">
+              <span class="prompt-sparkle">✨</span>
+              <input 
+                type="text" 
+                id="aiPromptInput" 
+                class="prompt-input" 
+                placeholder="Portfeliya kolleksiyasini yaratish (masalan: Web3, 3D, Mobile)..." 
+                value="Create a collection of works for portfolio"
+                data-i18n-placeholder="prompt.placeholder"
+              />
+            </div>
+            
+            <div class="prompt-actions">
+              <button class="prompt-btn-icon" id="promptOptionsBtn" title="Qo'shimcha variantlar" aria-label="Options">
+                <span>•••</span>
+              </button>
+              <button class="prompt-btn-text" id="promptClearBtn" data-i18n="prompt.cancel">Bekor qilish</button>
+              <button class="prompt-btn-generate" id="promptGenerateBtn">
+                <span class="sparkle-spin">✦</span>
+                <span data-i18n="prompt.generate">Generatsiya</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quick Suggestion Pills -->
+          <div class="prompt-suggestions">
+            <span class="suggestion-label" data-i18n="prompt.quick">Tezkor filtrlar:</span>
+            <button class="sug-pill" data-filter="crypto">⚡ Web3 DEX</button>
+            <button class="sug-pill" data-filter="ai">🤖 Generative AI</button>
+            <button class="sug-pill" data-filter="mobile">📱 Neo-Bank Mobile</button>
+            <button class="sug-pill" data-filter="brand">💎 3D Brand ID</button>
+            <button class="sug-pill" data-filter="spatial">🥽 VisionOS Spatial</button>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero-scroll-cue">
+          <a href="#stats" class="scroll-cue-link" aria-label="Pastga o'tish">
+            <span class="cue-mouse">
+              <span class="cue-wheel"></span>
+            </span>
+            <span class="cue-text" data-i18n="hero.scroll">Pastga suring</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LIVE STATS BAR ================= -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card" data-tilt>
+            <div class="stat-icon-wrap">💎</div>
+            <div class="stat-number" data-target="48.5" data-prefix="$" data-suffix="M+">$0M+</div>
+            <div class="stat-label" data-i18n="stats.volume">Savdo aylanmasi / Tranzaksiyalar</div>
+            <div class="stat-detail">Kripto &amp; FinTech platformalarida</div>
+          </div>
+
+          <div class="stat-card" data-tilt>
+            <div class="stat-icon-wrap">🚀</div>
+            <div class="stat-number" data-target="140" data-suffix="+">0+</div>
+            <div class="stat-label" data-i18n="stats.projects">Yetkazib berilgan loyihalar</div>
+            <div class="stat-detail">Dunyo bo'ylab mijozlar uchun</div>
+          </div>
+
+          <div class="stat-card" data-tilt>
+            <div class="stat-icon-wrap">⚡</div>
+            <div class="stat-number" data-target="99.9" data-suffix="%">0%</div>
+            <div class="stat-label" data-i18n="stats.uptime">24/7 Uzluksiz xizmat kafolati</div>
+            <div class="stat-detail">Yuqori tezlik va barqarorlik</div>
+          </div>
+
+          <div class="stat-card" data-tilt>
+            <div class="stat-icon-wrap">🏆</div>
+            <div class="stat-number" data-target="19" data-suffix=" Ta">0 Ta</div>
+            <div class="stat-label" data-i18n="stats.awards">Xalqaro mukofotlar</div>
+            <div class="stat-detail">Awwwards, Behance, FWA g'olibi</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PROJECTS SHOWCASE ================= -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-head text-center">
+          <div class="section-tag">
+            <span class="neon-line"></span>
+            <span data-i18n="projects.tag">SARALANGAN ISHLARIMIZ</span>
+            <span class="neon-line"></span>
+          </div>
+          <h2 class="section-title">
+            <span class="white-text" data-i18n="projects.title1">Biz Yaratgan</span>
+            <span class="lime-glow-text" data-i18n="projects.title2">Nodir Loyihalar</span>
+          </h2>
+          <p class="section-desc" data-i18n="projects.desc">
+            Har bir loyiha — ilg'or texnologiya, estetik cyberpunk dizayn va biznes uchun yuksak konversiya timsoli.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Barchasi (5)</button>
+          <button class="filter-btn" data-filter="crypto" data-i18n="filter.crypto">Web3 &amp; Kripto</button>
+          <button class="filter-btn" data-filter="ai" data-i18n="filter.ai">AI &amp; Generativ 3D</button>
+          <button class="filter-btn" data-filter="mobile" data-i18n="filter.mobile">Mobile FinTech</button>
+          <button class="filter-btn" data-filter="brand" data-i18n="filter.brand">Brand Identity</button>
+          <button class="filter-btn" data-filter="spatial" data-i18n="filter.spatial">Spatial AR/VR</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: Crypto DEX -->
+          <article class="project-card" data-category="crypto" data-project-id="p1" data-tilt>
+            <div class="project-media-wrap">
+              <img src="/assets/project-crypto-dex.jpg" alt="Nexus Exchange Web3 DEX" class="project-img" loading="lazy" />
+              <div class="project-badges">
+                <span class="badge badge-lime">WEB3 / DEX</span>
+                <span class="badge badge-dark">2026</span>
+              </div>
+              <button class="quick-view-btn" data-project="p1" aria-label="Loyiha tafsilotlari">
+                <span>👁️</span> <span data-i18n="projects.view">Batafsil Ko'rish</span>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="client-name">Nexus Protocol</span>
+                <span class="project-metric">+340% Savdo Hajmi</span>
+              </div>
+              <h3 class="project-title">Nexus Exchange — Decentralized Web3 Trading Terminal</h3>
+              <p class="project-snippet" data-i18n="projects.p1Desc">
+                Multi-chain svaplar, likvidlik chuqurligi grafikasi va sub-sekund buyurtma kitobiga ega professional kripto-birja interfeysi.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Ethers.js</span>
+                <span class="tech-tag">TradingView API</span>
+                <span class="tech-tag">Tailwind/CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Generative 3D AI -->
+          <article class="project-card" data-category="ai" data-project-id="p2" data-tilt>
+            <div class="project-media-wrap">
+              <img src="/assets/project-ai-canvas.jpg" alt="Synergy 3D AI Studio" class="project-img" loading="lazy" />
+              <div class="project-badges">
+                <span class="badge badge-lime">GENERATIVE AI</span>
+                <span class="badge badge-dark">2026</span>
+              </div>
+              <button class="quick-view-btn" data-project="p2" aria-label="Loyiha tafsilotlari">
+                <span>👁️</span> <span data-i18n="projects.view">Batafsil Ko'rish</span>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="client-name">Synergy Labs</span>
+                <span class="project-metric">8K Realtime Render</span>
+              </div>
+              <h3 class="project-title">Synergy 3D — Generative AI Spatial Workstation</h3>
+              <p class="project-snippet" data-i18n="projects.p2Desc">
+                Raqamli rassomlar va 3D modellashtiruvchilar uchun sun'iy intellekt orqali real vaqtda generatsiya qiluvchi to'liq UI ekotizimi.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Three.js</span>
+                <span class="tech-tag">WebGL</span>
+                <span class="tech-tag">WebGPU</span>
+                <span class="tech-tag">Python API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Mobile FinTech -->
+          <article class="project-card" data-category="mobile" data-project-id="p3" data-tilt>
+            <div class="project-media-wrap">
+              <img src="/assets/project-fintech-mobile.jpg" alt="Aether Pay Mobile Banking" class="project-img" loading="lazy" />
+              <div class="project-badges">
+                <span class="badge badge-lime">MOBILE APP</span>
+                <span class="badge badge-dark">2025</span>
+              </div>
+              <button class="quick-view-btn" data-project="p3" aria-label="Loyiha tafsilotlari">
+                <span>👁️</span> <span data-i18n="projects.view">Batafsil Ko'rish</span>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="client-name">Aether Financial</span>
+                <span class="project-metric">4.9 ★ App Store</span>
+              </div>
+              <h3 class="project-title">Aether Pay — Cyberpunk Crypto Debit &amp; Neo-Bank</h3>
+              <p class="project-snippet" data-i18n="projects.p3Desc">
+                Zamonaviy VISA kripto kartasi, real vaqtda portfel tahlili va biometrik xavfsizlikka asoslangan mobil bank ilovasi.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Swift</span>
+                <span class="tech-tag">FinTech Security</span>
+                <span class="tech-tag">Figma Prototyping</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Brand Identity -->
+          <article class="project-card" data-category="brand" data-project-id="p4" data-tilt>
+            <div class="project-media-wrap">
+              <img src="/assets/project-brand-identity.jpg" alt="Aether 3D Futuristic Brand" class="project-img" loading="lazy" />
+              <div class="project-badges">
+                <span class="badge badge-lime">BRAND SYSTEM</span>
+                <span class="badge badge-dark">2025</span>
+              </div>
+              <button class="quick-view-btn" data-project="p4" aria-label="Loyiha tafsilotlari">
+                <span>👁️</span> <span data-i18n="projects.view">Batafsil Ko'rish</span>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="client-name">Aether Brand Worldwide</span>
+                <span class="project-metric">Awwwards Nominee</span>
+              </div>
+              <h3 class="project-title">Aether Visuals — High-Fashion Chrome &amp; Neon Identity</h3>
+              <p class="project-snippet" data-i18n="projects.p4Desc">
+                Xrom metall va neon yorug'lik sintezi asosida yaratilgan to'liq 3D brending, tipografika va raqamli identifikatsiya paketi.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Cinema 4D</span>
+                <span class="tech-tag">Octane Render</span>
+                <span class="tech-tag">Typography</span>
+                <span class="tech-tag">Brand Book</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Spatial VR/AR -->
+          <article class="project-card" data-category="spatial" data-project-id="p5" data-tilt>
+            <div class="project-media-wrap">
+              <img src="/assets/project-spatial-vr.jpg" alt="Night City Spatial Computing" class="project-img" loading="lazy" />
+              <div class="project-badges">
+                <span class="badge badge-lime">SPATIAL / AR</span>
+                <span class="badge badge-dark">2026</span>
+              </div>
+              <button class="quick-view-btn" data-project="p5" aria-label="Loyiha tafsilotlari">
+                <span>👁️</span> <span data-i18n="projects.view">Batafsil Ko'rish</span>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="client-name">Replicant Spatial Tech</span>
+                <span class="project-metric">VisionOS Ready</span>
+              </div>
+              <h3 class="project-title">Replicant OS — Holographic Spatial UI for Vision Pro</h3>
+              <p class="project-snippet" data-i18n="projects.p5Desc">
+                Havo bo'ylab fazoviy imo-ishoralar bilan boshqariladigan robototexnika diagnostikasi va telemetriya holo-paneli.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">visionOS</span>
+                <span class="tech-tag">SwiftUI</span>
+                <span class="tech-tag">RealityKit</span>
+                <span class="tech-tag">Spatial Audio</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS & AWARDS (Yutuqlarimiz) ================= -->
+    <section class="achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-head text-center">
+          <div class="section-tag">
+            <span class="neon-line"></span>
+            <span data-i18n="achieve.tag">XALQARO E'TIROF VA YUTUQLAR</span>
+            <span class="neon-line"></span>
+          </div>
+          <h2 class="section-title">
+            <span class="white-text" data-i18n="achieve.title1">Bizning Rasmiy</span>
+            <span class="lime-glow-text" data-i18n="achieve.title2">G'alaba va Mukofotlarimiz</span>
+          </h2>
+          <p class="section-desc" data-i18n="achieve.desc">
+            Dizayn va dasturlash sohasidagi eng nufuzli platformalar tomonidan berilgan yuksak baholar.
+          </p>
+        </div>
+
+        <div class="awards-grid">
+          <!-- Award 1 -->
+          <div class="award-card" data-tilt>
+            <div class="award-icon-box">🏆</div>
+            <div class="award-year">2026</div>
+            <h3 class="award-name">Awwwards Site of the Day</h3>
+            <p class="award-desc" data-i18n="achieve.a1">
+              "Nexus Exchange" loyihasi innovatsion Web3 foydalanuvchi tajribasi va 60fps silliq animatsiyalari uchun xalqaro hakamlar tomonidan e'tirof etildi.
+            </p>
+            <div class="award-meta">
+              <span class="award-badge">9.2 / 10 Score</span>
+              <span class="award-platform">Awwwards Official</span>
+            </div>
+          </div>
+
+          <!-- Award 2 -->
+          <div class="award-card" data-tilt>
+            <div class="award-icon-box">⭐</div>
+            <div class="award-year">2025</div>
+            <h3 class="award-name">FWA of the Day (FWA)</h3>
+            <p class="award-desc" data-i18n="achieve.a2">
+              "Synergy 3D AI Workstation" loyihasi interaktiv WebGL va ilg'or generativ texnologiyalari uchun "Favourite Website Awards" mukofotini qo'lga kiritdi.
+            </p>
+            <div class="award-meta">
+              <span class="award-badge">Winner 2025</span>
+              <span class="award-platform">The FWA</span>
+            </div>
+          </div>
+
+          <!-- Award 3 -->
+          <div class="award-card" data-tilt>
+            <div class="award-icon-box">🎯</div>
+            <div class="award-year">2025</div>
+            <h3 class="award-name">Behance Best in Interaction</h3>
+            <p class="award-desc" data-i18n="achieve.a3">
+              "Graphic Design &amp; Cyberpunk Visuals" kuratorlar tomonidan Behance platformasining bosh sahifasiga taqdim etildi va 150K+ ko'rish yig'di.
+            </p>
+            <div class="award-meta">
+              <span class="award-badge">Curator's Choice</span>
+              <span class="award-platform">Behance Showcase</span>
+            </div>
+          </div>
+
+          <!-- Award 4 -->
+          <div class="award-card" data-tilt>
+            <div class="award-icon-box">⚡</div>
+            <div class="award-year">2024</div>
+            <h3 class="award-name">Web3 UX Summit — 1st Place</h3>
+            <p class="award-desc" data-i18n="achieve.a4">
+              Dubaydagi yillik Kripto &amp; Web3 Forumida eng qulay va xavfsiz mobil tranzaksiya interfeysi nominatsiyasi bo'yicha 1-o'rin sohibi bo'ldik.
+            </p>
+            <div class="award-meta">
+              <span class="award-badge">Gold Trophy</span>
+              <span class="award-platform">Web3 Summit Dubai</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestones Timeline Strip -->
+        <div class="milestones-strip">
+          <div class="milestone-item">
+            <span class="m-year">2023</span>
+            <span class="m-dot"></span>
+            <span class="m-text" data-i18n="achieve.m1">KRYTO Studio tashkil etildi</span>
+          </div>
+          <div class="milestone-item">
+            <span class="m-year">2024</span>
+            <span class="m-dot"></span>
+            <span class="m-text" data-i18n="achieve.m2">$10M+ hajmli loyihalar ishga tushirildi</span>
+          </div>
+          <div class="milestone-item">
+            <span class="m-year">2025</span>
+            <span class="m-dot"></span>
+            <span class="m-text" data-i18n="achieve.m3">AQSH va Yevropa bozoriga chiqildi</span>
+          </div>
+          <div class="milestone-item active">
+            <span class="m-year">2026</span>
+            <span class="m-dot pulse"></span>
+            <span class="m-text" data-i18n="achieve.m4">24/7 Global ishlab chiqish &amp; AI integratsiya</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES & CAPABILITIES ================= -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-head text-center">
+          <div class="section-tag">
+            <span class="neon-line"></span>
+            <span data-i18n="services.tag">IMKONIYAT VA XIZMATLAR</span>
+            <span class="neon-line"></span>
+          </div>
+          <h2 class="section-title">
+            <span class="white-text" data-i18n="services.title1">Sizning Loyihangiz Uchun</span>
+            <span class="lime-glow-text" data-i18n="services.title2">24/7 Yechimlar</span>
+          </h2>
+          <p class="section-desc" data-i18n="services.desc">
+            Biz shunchaki chiroyli rasm chizmaymiz — biz mahsulotingizni dunyo darajasiga olib chiqamiz.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card" data-tilt>
+            <div class="service-num">01 //</div>
+            <div class="service-icon">🌐</div>
+            <h3 class="service-title" data-i18n="services.s1Title">Web3 &amp; Kripto UX/UI Dizayn</h3>
+            <p class="service-desc" data-i18n="services.s1Desc">
+              DEX birjalari, DeFi platformalari, Staking dasturlari va NFT bozorlari uchun mukammal xavfsiz va tushunarli interfeyslar.
+            </p>
+            <ul class="service-list">
+              <li>✓ Smart Contract UI bog'lanishi</li>
+              <li>✓ Hamyonlar integratsiyasi (MetaMask, Phantom)</li>
+              <li>✓ Realtime bozor ma'lumotlari grafikasi</li>
+            </ul>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card" data-tilt>
+            <div class="service-num">02 //</div>
+            <div class="service-icon">⚡</div>
+            <h3 class="service-title" data-i18n="services.s2Title">Yuqori Tezlikdagi Web Dasturlash</h3>
+            <p class="service-desc" data-i18n="services.s2Desc">
+              Zamonaviy texnologiyalar (Vite, React, Next.js, Node.js) yordamida har bir soniyada millionlab foydalanuvchiga xizmat qiluvchi tizimlar.
+            </p>
+            <ul class="service-list">
+              <li>✓ 100/100 Google Lighthouse ko'rsatkichi</li>
+              <li>✓ SEO va ijtimoiy tarmoqlar optimizatsiyasi</li>
+              <li>✓ Telefon va planshetlar uchun to'liq moslik</li>
+            </ul>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card" data-tilt>
+            <div class="service-num">03 //</div>
+            <div class="service-icon">🥽</div>
+            <h3 class="service-title" data-i18n="services.s3Title">3D Interaktiv Grafika &amp; WebGL</h3>
+            <p class="service-desc" data-i18n="services.s3Desc">
+              Mijozlarni hayratga soladigan 3D modellar, fazoviy animatsiyalar, shader effektlar va brending elementlari.
+            </p>
+            <ul class="service-list">
+              <li>✓ WebGL / Three.js 60 FPS silliqlik</li>
+              <li>✓ Interaktiv audio va haptik effektlar</li>
+              <li>✓ Cyberpunk va zamonaviy neon uslubi</li>
+            </ul>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card" data-tilt>
+            <div class="service-num">04 //</div>
+            <div class="service-icon">📱</div>
+            <h3 class="service-title" data-i18n="services.s4Title">Mobil Ilovalar (iOS &amp; Android)</h3>
+            <p class="service-desc" data-i18n="services.s4Desc">
+              App Store va Google Play uchun tayyor FinTech, E-commerce va shaxsiy xizmat mobil ilovalari arxitekturasi.
+            </p>
+            <ul class="service-list">
+              <li>✓ Native darajasidagi silliqlik</li>
+              <li>✓ Qulay barmoq ergonomikasi (UX)</li>
+              <li>✓ Qorong'u va yorug' mavzu adaptatsiyasi</li>
+            </ul>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card" data-tilt>
+            <div class="service-num">05 //</div>
+            <div class="service-icon">🤖</div>
+            <h3 class="service-title" data-i18n="services.s5Title">AI Agentlar &amp; Avtomatlashtirish</h3>
+            <p class="service-desc" data-i18n="services.s5Desc">
+              Biznesingizga sun'iy intellekt modellarini o'rnatish, chatbotlar, avtomatlashgan kontent yaratish va ma'lumot tahlili.
+            </p>
+            <ul class="service-list">
+              <li>✓ LLM va generativ API integratsiyasi</li>
+              <li>✓ Avtomatlashtirilgan CRM va buyurtma oqimi</li>
+              <li>✓ Real vaqt ma'lumot tahlilchisi</li>
+            </ul>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card service-card-highlight" data-tilt>
+            <div class="service-num">06 //</div>
+            <div class="service-icon">🛡️</div>
+            <h3 class="service-title" data-i18n="services.s6Title">24/7 Texnik Qo'llab-quvvatlash</h3>
+            <p class="service-desc" data-i18n="services.s6Desc">
+              Saytingiz va dasturingiz tun-u kun barqaror ishlashini ta'minlash, xatoliklarni soniyalar ichida bartaraf etish kafolati.
+            </p>
+            <ul class="service-list">
+              <li>✓ 99.9% Server Uptime monitoringi</li>
+              <li>✓ Zaxira nusxalar (Daily Backups)</li>
+              <li>✓ Maxsus shaxsiy menejer va Telegram aloqa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT US / TEAM PHILOSOPHY ================= -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: Designer/Studio High-Tech Portrait -->
+          <div class="about-visual" data-tilt>
+            <div class="about-img-frame">
+              <img src="/assets/author-avatar.jpg" alt="Abdulloh G'ulomov — 16 yoshli Dasturchi &amp; Dizayner" class="about-img" loading="lazy" />
+              <div class="about-img-badge">
+                <span class="live-dot pulse"></span>
+                <span>ONLINE // ABDULLOH (16 YOSH)</span>
+              </div>
+              <div class="about-tech-stack-overlay">
+                <span class="pill-chip">16 yosh</span>
+                <span class="pill-chip">Frontend Dev</span>
+                <span class="pill-chip">UI/UX Dizayn</span>
+                <span class="pill-chip">Web3 &amp; WebGL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: About Story & Mission -->
+          <div class="about-content">
+            <div class="section-tag">
+              <span class="neon-line"></span>
+              <span data-i18n="about.tag">ABDULLOH G'ULOMOV HAQIDA</span>
+            </div>
+            <h2 class="section-title">
+              <span class="white-text" data-i18n="about.title1">16 Yoshda —</span>
+              <span class="lime-glow-text" data-i18n="about.title2">Kelajak Texnologiyalari Sari</span>
+            </h2>
+            <p class="about-lead" data-i18n="about.p1">
+              Salom! Men Abdulloh G'ulomov, 16 yoshdaman. Zamonaviy Web3, Kriptovalyuta birjalari, interaktiv UI/UX dizayn va yuqori tezlikdagi frontend dasturlash bo'yicha ixtisoslashganman.
+            </p>
+            <p class="about-body" data-i18n="about.p2">
+              Mening falsafam: yosh shunchaki raqam, eng asosiysi — kod sifati, zamonaviy fikrlash va har bir pikselga berilgan yuksak e'tibor. Har bir loyiha foydalanuvchida chinakam hayrat (WOW-effect) uyg'otishi va biznesga real natija keltirishi shart.
+            </p>
+
+            <!-- Skill Progression Bars -->
+            <div class="skills-wrap">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Web3 &amp; FinTech UI/UX</span>
+                  <span class="skill-val">99%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 99%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Interactive Frontend (JavaScript, WebGL)</span>
+                  <span class="skill-val">96%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 96%"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Mobil Moslashuvchanlik &amp; Tezlik (Mobile 24/7)</span>
+                  <span class="skill-val">100%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 100%"></div></div>
+              </div>
+            </div>
+
+            <!-- Founder Quote -->
+            <div class="founder-quote">
+              <span class="quote-mark">“</span>
+              <p class="quote-text" data-i18n="about.quote">
+                16 yoshimda yaratayotgan har bir mahsulotim orqali texnologiyalar kelajagini bugun barpo etish va eng yuqori jahon talablariga javob berish — mening bosh maqsadimdir.
+              </p>
+              <div class="quote-author">
+                <span class="author-name">Abdulloh G'ulomov</span>
+                <span class="author-title">Creative Developer &amp; UI/UX Designer (16 yosh)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CLIENT REVIEWS / TESTIMONIALS ================= -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-head text-center">
+          <div class="section-tag">
+            <span class="neon-line"></span>
+            <span data-i18n="reviews.tag">MIJOZLAR ISHONCHI</span>
+            <span class="neon-line"></span>
+          </div>
+          <h2 class="section-title">
+            <span class="white-text" data-i18n="reviews.title1">Hamkorlarimiz Biz Haqimizda</span>
+            <span class="lime-glow-text" data-i18n="reviews.title2">Nima Deyishadi?</span>
+          </h2>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <div class="review-card" data-tilt>
+            <div class="review-rating">★★★★★</div>
+            <p class="review-text" data-i18n="reviews.r1">
+              "Abdulloh 16 yoshda bo'lishiga qaramay, bizning Web3 DEX birjamiz interfeysini 0 dan ishlab chiqdi. 24/7 aloqada bo'ldi, telefon uchun moslashuvi va tezligi aqlbovar qilmas darajada yuqori. Ishga tushgan birinchi oyidayoq konversiya 340% ga oshdi!"
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">DN</div>
+              <div class="reviewer-meta">
+                <span class="reviewer-name">David Novak</span>
+                <span class="reviewer-role">Nexus Protocol asoschisi (San Francisco)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card" data-tilt>
+            <div class="review-rating">★★★★★</div>
+            <p class="review-text" data-i18n="reviews.r2">
+              "3D interfeyslar va cyberpunk estetika bo'yicha Abdullohga teng keladigani yo'q. Yosh bo'lishiga qaramay, haqiqiy professional. Behance va Awwwards mukofotlari mutlaqo haqli berilgan."
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">ES</div>
+              <div class="reviewer-meta">
+                <span class="reviewer-name">Elena Soloveva</span>
+                <span class="reviewer-role">Synergy Labs Art Direktori</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card" data-tilt>
+            <div class="review-rating">★★★★★</div>
+            <p class="review-text" data-i18n="reviews.r3">
+              "Telefon uchun qilingan qismi shunchalik qulay va chiroyliki, odamlar saytdan chiqishni xohlamaydi. 24/7 rejimda doim qo'llab-quvvatlashadi. Barcha topshiriqlar vaqtidan oldin yetkazib berildi!"
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">AK</div>
+              <div class="reviewer-meta">
+                <span class="reviewer-name">Anvar Karimov</span>
+                <span class="reviewer-role">FinTech O'zbekiston Boshqaruvchisi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 24/7 INTERACTIVE CONTACT / INQUIRY ================= -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left info -->
+          <div class="contact-info">
+            <div class="section-tag">
+              <span class="neon-line"></span>
+              <span data-i18n="contact.tag">ALOQA VA BUYURTMALAR</span>
+            </div>
+            <h2 class="section-title">
+              <span class="white-text" data-i18n="contact.title1">Keling, Birgalikda</span>
+              <span class="lime-glow-text" data-i18n="contact.title2">Kelajakni Quramiz</span>
+            </h2>
+            <p class="contact-desc" data-i18n="contact.desc">
+              Sizga portfolio, kripto platforma yoki mobil veb sayt kerakmi? Biz 24/7 rejimda sizning g'oyangizni eshitishga va uni eng yuqori darajada amalga oshirishga tayyormiz.
+            </p>
+
+            <div class="contact-channels">
+              <a href="https://t.me/krytostudio" target="_blank" rel="noopener" class="contact-card">
+                <div class="channel-icon">✈️</div>
+                <div class="channel-meta">
+                  <span class="channel-label">Telegram (24/7 Tezkor javob)</span>
+                  <span class="channel-value">@krytostudio</span>
+                </div>
+                <span class="channel-arrow">→</span>
+              </a>
+
+              <a href="mailto:contact@kryto.studio" class="contact-card">
+                <div class="channel-icon">✉️</div>
+                <div class="channel-meta">
+                  <span class="channel-label">Elektron Pochta</span>
+                  <span class="channel-value">contact@kryto.studio</span>
+                </div>
+                <span class="channel-arrow">→</span>
+              </a>
+
+              <div class="contact-card status-card">
+                <div class="channel-icon">🟢</div>
+                <div class="channel-meta">
+                  <span class="channel-label" data-i18n="contact.liveStatus">Hozirgi Holatimiz</span>
+                  <span class="channel-value" data-i18n="contact.available">Yangi buyurtmalar uchun ochiq</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Form -->
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contactForm">
+              <div class="form-title-group">
+                <h3 class="form-title" data-i18n="contact.formTitle">Loyiha Buyurtma Qilish</h3>
+                <span class="form-badge">24/7 RESPONSE</span>
+              </div>
+
+              <div class="form-group">
+                <label for="userName" data-i18n="contact.nameLabel">Ismingiz yoki Kompaniya *</label>
+                <input type="text" id="userName" name="name" required placeholder="Masalan: Sardor Aliyev" />
+              </div>
+
+              <div class="form-group">
+                <label for="userContact" data-i18n="contact.contactLabel">Telegram yoki Telefon Raqamingiz *</label>
+                <input type="text" id="userContact" name="contact" required placeholder="+998 90 123 45 67 yoki @username" />
+              </div>
+
+              <div class="form-group">
+                <label for="projectType" data-i18n="contact.typeLabel">Loyiha Turi</label>
+                <select id="projectType" name="type">
+                  <option value="portfolio">Portfolio Veb Sayt</option>
+                  <option value="crypto">Web3 / Kripto Platforma</option>
+                  <option value="mobile">Mobil Ilova / UI/UX</option>
+                  <option value="brand">3D Brending &amp; Dizayn</option>
+                  <option value="full">To'liq 24/7 Dasturlash</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" data-i18n="contact.msgLabel">Loyiha Haqida Qisqacha *</label>
+                <textarea id="userMessage" name="message" rows="4" required placeholder="G'oyangiz, talablaringiz va muddat haqida yozing..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                <span data-i18n="contact.submitBtn">Yuborish &amp; Boshlash</span>
+                <span class="submit-arrow">⚡</span>
+              </button>
+
+              <div class="form-notice" data-i18n="contact.privacyNotice">
+                🔒 Ma'lumotlaringiz to'liq maxfiy saqlanadi. 15 daqiqa ichida javob beramiz.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <div class="logo-avatar-wrap">
+              <img src="/assets/author-avatar.jpg" alt="Abdulloh G'ulomov" class="logo-avatar-img" />
+            </div>
+            <span class="logo-text">ABDULLOH<span class="lime-dot">.</span></span>
+            <span class="badge-tag">16 YOSH // DEV</span>
+          </a>
+          <p class="footer-motto" data-i18n="footer.motto">
+            Abdulloh G'ulomov — 16 yoshli Creative Developer &amp; UI/UX Designer. 24/7 Global xizmat.
+          </p>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4 class="col-title" data-i18n="footer.navTitle">Navigatsiya</h4>
+            <a href="#projects" data-i18n="nav.projects">Loyihalar</a>
+            <a href="#achievements" data-i18n="nav.achievements">Yutuqlarimiz</a>
+            <a href="#services" data-i18n="nav.services">Xizmatlar</a>
+            <a href="#about" data-i18n="nav.about">Biz Haqimizda</a>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="col-title" data-i18n="footer.socialTitle">Ijtimoiy Tarmoqlar</h4>
+            <a href="https://t.me/abdulloh_gulomov" target="_blank" rel="noopener">Telegram Channel</a>
+            <a href="https://behance.net" target="_blank" rel="noopener">Behance Portfolio</a>
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub Profile</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="col-title">24/7 Status</h4>
+            <div class="footer-status-box">
+              <span class="status-dot"></span>
+              <span>All Systems Operational</span>
+            </div>
+            <p class="footer-uptime">99.99% Uptime Monitored</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; 2026 Abdulloh G'ulomov. Barcha huquqlar himoyalangan.
+        </div>
+        <div class="footer-credits">
+          Designed with <span class="lime-text">Electric Lime &bull; Cyberpunk Passion</span>
+        </div>
+        <a href="#hero" class="back-to-top" aria-label="Yuqoriga qaytish">
+          <span>↑</span> Yuqoriga
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= IMMERSIVE PROJECT DETAILS MODAL ================= -->
+  <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Yopish">✕</button>
+      
+      <div class="modal-scroll-body">
+        <div class="modal-header">
+          <div class="modal-badges">
+            <span class="badge badge-lime" id="modalBadgeCategory">WEB3</span>
+            <span class="badge badge-dark" id="modalBadgeYear">2026</span>
+          </div>
+          <h2 class="modal-title" id="modalTitle">Loyiha Nomi</h2>
+          <div class="modal-meta-row">
+            <div class="meta-item"><span class="meta-lbl">Mijoz:</span> <strong id="modalClient">Nexus</strong></div>
+            <div class="meta-item"><span class="meta-lbl">Natija:</span> <strong id="modalResult" class="lime-text">+340%</strong></div>
+            <div class="meta-item"><span class="meta-lbl">Rol:</span> <strong id="modalRole">Full Product Design &amp; Web</strong></div>
+          </div>
+        </div>
+
+        <div class="modal-hero-media">
+          <img src="" alt="" class="modal-img" id="modalImg" />
+        </div>
+
+        <div class="modal-details-grid">
+          <div class="modal-section">
+            <h4 class="modal-sec-title">🎯 Muammo va Maqsad</h4>
+            <p id="modalChallenge" class="modal-sec-text"></p>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-sec-title">⚡ Yechim va Natija</h4>
+            <p id="modalSolution" class="modal-sec-text"></p>
+          </div>
+        </div>
+
+        <div class="modal-tech-stack">
+          <h4 class="modal-sec-title">🛠️ Ishlatilgan Texnologiyalar</h4>
+          <div class="tech-tags-list" id="modalTechTags"></div>
+        </div>
+
+        <div class="modal-actions-bar">
+          <a href="#contact" class="btn btn-primary modal-contact-btn" id="modalCtaBtn">
+            <span>Ushbu Uslubda Buyurtma Berish</span> →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
